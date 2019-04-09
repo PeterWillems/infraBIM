@@ -108,6 +108,10 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+
+    li {
+      text-align: left;
+    }
   }
 }
 
@@ -177,6 +181,18 @@ main {
   @extend .btn;
   background: lighten($primary-color, 50);
   color: #333;
+}
+
+.btn-disabled {
+  @extend .btn;
+  background: rgb(182, 182, 182);
+  color: rgb(84, 84, 84);
+  cursor: default;
+
+  &:hover {
+    background: rgb(182, 182, 182);
+    color: rgb(84, 84, 84);
+  }
 }
 
 #main-footer {
